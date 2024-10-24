@@ -1,0 +1,41 @@
+.movie-item {
+    border: 1px solid #2f2f2f;
+    height: 180px;
+    display: flex;
+}
+
+.movie-item-img {
+    width: 120px;
+    height: 100%;
+    object-fit: cover;
+}
+
+.movie-meta {
+    padding-left: 8px;
+    position: relative;
+    width: calc(100% - 60px);
+}
+
+p {
+    margin: 0;
+}
+
+.movie-title {
+    font-size: 24px;
+}
+
+.movie-sub-title {
+    font-size: 14px;
+    color: #a8a8a8;
+}
+
+.view-details-btn {
+    background: none;
+    background-color: unset;
+    border: 1px solid #5555559e;
+    padding: 4px;
+    color: #fff;
+    position: absolute;
+    bottom: 0;
+    width: 90%;
+}
