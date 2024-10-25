@@ -1,0 +1,18 @@
+<div class="container p-2">
+    @if (movieList) {
+    <div class="row d-flex">
+        <div *ngFor="let movieItem of movieList" class="col-md-4 p-4">
+            <div class="p-3 movie-item">
+                <img src="./assets/{{ movieItem.image }}" [alt]="movieItem.name" class="movie-item-img" />
+                <div class="movie-meta">
+                    <div class="movie-meta-wrapper">
+                        <p class="movie-title">{{movieItem.title}}</p>
+                        <p class="movie-sub-title">{{movieItem.year}}</p>
+                        <button class="view-details-btn">View Details</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    }
+</div>
